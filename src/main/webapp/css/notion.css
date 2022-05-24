@@ -1,0 +1,41 @@
+/*notion css*/
+@charset "UTF-8";
+#wrap{
+	/* 1024*768로 해상도를 맞춰서 설계*/
+	width:971px;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+}
+h1{
+	margin-bottom :20px;
+	color: black;
+}
+table{
+	width: 100%;
+	border-collapse: collapse;
+	font-size :13px;
+	line-height: 25px; /*줄간격*/
+}   
+table td {
+	border: #d3d3d3 solid 1px;/*경계선 색상 스타일 굵기*/
+	padding: 5px; /*안쪽 여백*/
+}
+th {
+    background-color: #2d2d2d;
+	width: 120px;
+	color: white;
+	border-color: white;	/*보더 외곽선 색상*/
+}
+img{
+	width: 220px;
+	height: 300px;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+a:HOVER {
+	text-decoration: underline; /*밑줄*/
+	color:green;/*글색상*/
+}
