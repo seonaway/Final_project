@@ -1,6 +1,22 @@
 package com.style.controller;
 
 import com.style.controller.action.Action;
+import com.style.controller.action.ComplainDeleteAction;
+import com.style.controller.action.ComplainListAction;
+import com.style.controller.action.ComplainUpdateAction;
+import com.style.controller.action.ComplainUpdateFormAction;
+import com.style.controller.action.ComplainViewAction;
+import com.style.controller.action.ComplainWriteAction;
+import com.style.controller.action.ComplainWriteFormAction;
+import com.style.controller.action.MembermanagementDeleteAction;
+import com.style.controller.action.MembermanagementJoinAction;
+import com.style.controller.action.MembermanagementJoinFormAction;
+import com.style.controller.action.MembermanagementListAction;
+import com.style.controller.action.MembermanagementLoginAction;
+import com.style.controller.action.MembermanagementLoginFormAction;
+import com.style.controller.action.MembermanagementUpdateAction;
+import com.style.controller.action.MembermanagementUpdateFormAction;
+import com.style.controller.action.MembermanagementViewAction;
 import com.style.controller.action.NotionCheckPassAction;
 import com.style.controller.action.NotionCheckPassFormAction;
 import com.style.controller.action.NotionDeleteAction;
@@ -66,6 +82,54 @@ public class ActionFactory {
 		} else if (command.equals("product_write_form")) {
 			action = new ProductWriteFormAction();
 
+		} else if (command.equals("complain_list")) {
+			action = new ComplainListAction();
+			
+		} else if (command.equals("complain_write_form")) {
+			action = new ComplainWriteFormAction();
+			
+		} else if (command.equals("complain_write")) {
+			action = new ComplainWriteAction();
+			
+		} else if (command.equals("complain_view")) {
+			action = new ComplainViewAction();
+			
+		} else if (command.equals("complain_update_form")) {
+			action = new ComplainUpdateFormAction();
+			
+		} else if (command.equals("complain_update")) {
+			action = new ComplainUpdateAction();
+			
+		} else if (command.equals("complain_delete")) {
+			action = new ComplainDeleteAction();
+			
+		} else if (command.equals("membermanagement_list")) {
+			action = new MembermanagementListAction();
+			
+		} else if (command.equals("membermanagement_view")) {
+			action = new MembermanagementViewAction();
+			
+		} else if (command.equals("membermanagement_update_form")) {
+			action = new MembermanagementUpdateFormAction();
+			
+		} else if (command.equals("membermanagement_update")) {
+			action = new MembermanagementUpdateAction();
+			
+		} else if (command.equals("membermanagement_delete")) {
+			action = new MembermanagementDeleteAction();
+			
+		} else if (command.equals("membermanagement_join_form")) {
+			action = new MembermanagementJoinFormAction();
+			
+		} else if (command.equals("membermanagement_join")) {
+			action = new MembermanagementJoinAction();
+			
+		} else if (command.equals("membermanagement_login_form")) {
+			action = new MembermanagementLoginFormAction();
+			
+		} else if (command.equals("membermanagement_login")) {
+			action = new MembermanagementLoginAction();
+			
 		}
 
 		return action;
